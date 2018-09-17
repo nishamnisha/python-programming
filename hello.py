@@ -1,3 +1,2 @@
-n=int(raw_input())
-for i in range(n):
+for i in range(3):
     print "Hello"
