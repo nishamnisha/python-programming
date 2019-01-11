@@ -1,28 +1,13 @@
-def reorder(arr,index, num):
- 
-    temp = [0] * num;
- 
-    
-       
-    for i in range(0,num):
-        temp[index[i]] = arr[i]
- 
-   
-    for i in range(0,num):
-        arr[i] = temp[i]
-        index[i] = i
-     
-
-arr = [50, 40, 70, 60, 90]
-index = [3, 0, 4, 1, 2]
-num = len(arr)
- 
-reorder(arr, index, num)
- 
-print("Reordered array is:")
-for i in range(0,num):
-    print(arr[i],end = " ")
- 
-print("\nModified Index array is:")
-for i in range(0,num):
-    print(index[i],end = " ")
+def changed():
+	n1=int(input())
+	l1=[]
+	for i in range(n1):
+		l1.append(int(input()))
+	for i in range(1,n1):
+		if l1[i-1]>l1[i]:
+			print(l1[i-1])
+			break
+try:
+	changed()
+except:
+	print('invalid')
